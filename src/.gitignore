@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.venv
+Outline.txt
+
+# Data files
+dummy.csv
+*.csv
+data/
+
+# Operating system files
+.DS_Store
+Thumbs.db

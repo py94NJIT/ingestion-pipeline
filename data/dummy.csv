@@ -1,0 +1,106 @@
+customer_id,name,email,signup_date
+101,alice smith,ALICE@example.com,2026-01-15
+102,  bob jones  ,bob@example.com,2026-01-16
+103,Charlie Brown,,2026-01-17
+104,dana white,DANA@EXAMPLE.COM,2026-01-18
+105,,lonely@example.com,2026-01-19
+106,  Frank Castle,frank@punisher.com,2026-01-20
+107,Peter Parker,PETER@DAILYBUGLE.COM,2026-01-21
+108,bruce banner,HULK@AVENGERS.ORG,2026-01-22
+109,Tony Stark  ,tony@stark.com   ,2026-01-23
+110,CLARK KENT,clark.kent@dailyplanet.com,2026-01-24
+111,Diana Prince,diana@themyscira.gov,2026-01-25
+112,Barry Allen,barry.allen@star_labs.co,2026-01-26
+113,Arthur Curry,,2026-01-27
+114, Hal Jordan ,green_lantern@corps.net,2026-01-28
+115,Selina Kyle,cat@gotham.org,2026-01-29
+116,wally west,WALLY@FAST.COM,2026-01-30
+117,Dick Grayson,nightwing@bludhaven.net,2026-01-31
+118,BARBARA GORDON,oracle@gotham.gov,2026-02-01
+119,harleen quinzel,harley_quinn@arkham.com,2026-02-02
+120,  Bruce Wayne  ,batman@waynecorp.com,2026-02-03
+121,Harvey Dent,two_face@gotham.gov,2026-02-04
+122,Pamela Isley,poison_ivy@gotham.org,2026-02-05
+123,Oswald Cobblepot,penguin@iceberg.com,2026-02-06
+124,Edward Nigma,,2026-02-07
+125,,anonymous@hacker.net,2026-02-08
+126,Victor Fries,mr_freeze@gotham.gov,2026-02-09
+127,Waylon Jones,killer_croc@sewer.com,2026-02-10
+128,Jonathan Crane,scarecrow@arkham.com,2026-02-11
+129,Bane Central,BANE@SANTAPRISCA.COM,2026-02-12
+130,Lex Luthor,lex@luthorcorp.com ,2026-02-13
+131,lois lane,LOIS.LANE@DAILYPLANET.COM,2026-02-14
+132,Jimmy Olsen,jimmy@dailyplanet.com,2026-02-15
+133,Perry White,perry@dailyplanet.com,2026-02-16
+134,Kara Zor-El,supergirl@deon.gov,2026-02-17
+135,J'onn J'onzz,martian@justice.org,2026-02-18
+136,Oliver Queen,oliver@queenindustries.com,2026-02-19
+137,Dinah Lance,,2026-02-20
+138,  Roy Harper,speedy@arsenal.net,2026-02-21
+139,Slade Wilson,deathstroke@mercenary.com,2026-02-22
+140,Wade Wilson,DEADPOOL@CHIMI.COM,2026-02-23
+141,Nathan Summers,cable@timeline.org,2026-02-24
+142,Neena Thurman,domino@luck.com,2026-02-25
+143,Lucas Bishop,bishop@future.net,2026-02-26
+144,Remy LeBeau,gambit@gumbo.org,2026-02-27
+145,Anna Marie,rogue@xmen.org,2026-02-28
+146,Logan Howlett,wolverine@weaponx.gov,2026-03-01
+147,Scott Summers,cyclops@xmen.org,2026-03-02
+148,Jean Grey,phoenix@xmen.org,2026-03-03
+149,Ororo Munroe,storm@wakanda.gov,2026-03-04
+150,Hank McCoy,beast@xmen.org,2026-03-05
+151,Bobby Drake,iceman@xmen.org,2026-03-06
+152,Warren Worthington,angel@xmen.org,2026-03-07
+153,Kurt Wagner,nightcrawler@circus.de,2026-03-08
+154,piotr rasputin,colossus@soviet.ru,2026-03-09
+155,Kitty Pryde,shadowcat@xmen.org,2026-03-10
+156,Charles Xavier,professorx@mansion.edu,2026-03-11
+157, Erik Lehnsherr ,magneto@genosha.org,2026-03-12
+158,Raven Darkholme,mystique@brotherhood.net,2026-03-13
+159,Victor Creed,sabretooth@wild.com,2026-03-14
+160,Cain Marko,juggernaut@unstoppable.com,2026-03-15
+161,Steve Rogers,cap@avengers.org,2026-03-16
+162,sam wilson,falcon@avengers.org,2026-03-17
+163,Bucky Barnes,winter_soldier@shield.gov,2026-03-18
+164,Natasha Romanoff,black_widow@kgb.ru,2026-03-19
+165,Clint Barton,hawkeye@avengers.org,2026-03-20
+166,Bruce Banner,banner@biolab.edu,2026-03-21
+167,Thor Odinson,thor@asgard.gov,2026-03-22
+168,Loki Laufeyson,loki@mischief.net,2026-03-23
+169,Heimdall Bifrost,heimdall@asgard.gov,2026-03-24
+170,Odin Borson,allfather@asgard.gov,2026-03-25
+171,Frigga Queen,frigga@asgard.gov,2026-03-26
+172,Balder Brave,,2026-03-27
+173,  Stephen Strange  ,dr_strange@sanctum.org,2026-03-28
+174,Wong Librarian,wong@kamar_taj.edu,2026-03-29
+175,Wanda Maximoff,scarlet_witch@westview.gov,2026-03-30
+176,Vision Android,vision@avengers.org,2026-03-31
+177,Pietro Maximoff,quicksilver@sokovia.ru,2026-04-01
+178,Carol Danvers,captain_marvel@starforce.com,2026-04-02
+179,Nick Fury,fury@shield.gov,2026-04-03
+180,Maria Hill,hill@shield.gov,2026-04-04
+181,Phil Coulson,coulson@tahiti.net,2026-04-05
+182,Melinda May,the_cavalry@shield.gov,2026-04-06
+183,Daisy Johnson,quake@shield.gov,2026-04-07
+184,Leo Fitz,fitz@shield.gov,2026-04-08
+185,Jemma Simmons,simmons@shield.gov,2026-04-09
+186,Luke Cage,luke@powerman.com,2026-04-10
+187,Danny Rand,iron_fist@k'un_lun.edu,2026-04-11
+188,Matt Murdock,matt@nelson_murdock.law,2026/04/12
+189,Jessica Jones,jessica@alias_investigations.com,2026-04-13
+190,Frank Castle,punisher@vengeance.com,2026-04-14
+191,Peter Parker,spidey@queens.ny,2026-04-15
+192,Miles Morales,miles@spiderverse.net,2026-04-16
+193,gwen stacy,ghost_spider@earth65.org,2026-04-17
+194,Miguel O'Hara,spiderman2099@alchemax.com,04-18-2026
+195,Jessica Drew,jess_drew@spiderwoman.org,2026-04-19
+196,Ben Reilly,scarlet_spider@clonelab.com,2026-04-20
+197,Otto Octavius,doc_ock@sinister6.com,2026-04-21
+198,Norman Osborn,green_goblin@oscorp.com,2026-04-22
+199,Harry Osborn,harry@oscorp.com,2026-04-23
+200,Eddie Brock,venom@symbiote.net,2026-04-24
+201,,ghost@nobody.com,2026-04-25
+202,Cletus Kasady,carnage@ravencroft.edu,2026-04-26
+203,Felicia Hardy,black_cat@heist.org,2026-04-27
+204,J. Jonah Jameson,jjj@dailybugle.com,04-28-2026
+205,Robbie Robertson,robbie@dailybugle.com,2026-04-29
