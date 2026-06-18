@@ -1,4 +1,4 @@
-import pandas
+import pandas as pd
 import readers.csv_reader as read
 from datetime import datetime
 
@@ -9,6 +9,8 @@ def clean_string(value :str ,casing:str ="title") -> str:
     '''
     formats string into desired case and strips extra spacing and returns string
     '''
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return ""
     cleaned = value.strip()
     if casing == "lower":
         cleaned = value.lower()
@@ -26,12 +28,17 @@ def clean_date(date_str : str) -> str:
     return None
     
 
-def transform_customer_record(rows: dict) -> dict:
+def transform_customer_record(row: dict) -> dict:
     '''
     function to call all clean functions on data for csv data
     '''
-    
-    print(clean_string("defAULT"))
-    print(clean_date("2024/01/12"))
-    pass
+    return {
+        "customer_id": int(row["customer_id"]),
+        "name": clean_string(row.get("name"), casing = "title"),
+        "email": clean_string(row.get("email"), casing = "lower"),
+        "signup_date": clean_date(row.get("signup_date)"))
 
+    }
+    
+def transform_manga_record(rows: dict) -> dict:
+    pass

@@ -9,6 +9,12 @@ dummy.csv
 *.csv
 data/
 
+# PostgreSQL database files
+pgdata/
+postgres_data/
+*.sql
+*.log
+
 # Operating system files
 .DS_Store
 Thumbs.db

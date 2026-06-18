@@ -1,4 +1,5 @@
 import requests
+import time
 
 def fetch_data_from_api(search_query: str) -> list:
     url = f"https://openlibrary.org/search.json?q={search_query}&limit=10"
