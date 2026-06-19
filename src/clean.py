@@ -11,11 +11,11 @@ def clean_string(value :str ,casing:str ="title") -> str:
     '''
     if value is None or (isinstance(value, float) and pd.isna(value)):
         return ""
-    cleaned = value.strip()
+    cleaned = str(value).strip()
     if casing == "lower":
-        cleaned = value.lower()
+        cleaned = cleaned.lower()
     else:
-        cleaned = value.title()
+        cleaned = cleaned.title()
     return cleaned
 
 def clean_date(date_str : str) -> str:

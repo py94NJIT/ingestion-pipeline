@@ -1,5 +1,5 @@
 customer_id,name,email,signup_date
-101,alice smith,ALICE@example.com,2026-01-15
+101,,ALICE@example.com,2026-01-15
 102,  bob jones  ,bob@example.com,2026-01-16
 103,Charlie Brown,,2026-01-17
 104,dana white,DANA@EXAMPLE.COM,2026-01-18
