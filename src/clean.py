@@ -20,7 +20,7 @@ def clean_string(value :str ,casing:str ="title") -> str:
 
 def clean_date(date_str : str) -> str:
     if not date_str: return None
-    for fmt in ("%Y-%m-%d", "%Y/%m/%d", "%d-%m-%Y", "%Y-%m-%dT%H:%M:%S%z"):
+    for fmt in ("%Y-%m-%d", "%Y/%m/%d","%m-%d-%Y", "%d-%m-%Y", "%Y-%m-%d %H:%M:%S"):
         try:
             return datetime.strptime(str(date_str).strip(), fmt).strftime("%Y-%m-%d")
         except ValueError:
@@ -36,7 +36,7 @@ def transform_customer_record(row: dict) -> dict:
         "customer_id": int(row["customer_id"]),
         "name": clean_string(row.get("name"), casing = "title"),
         "email": clean_string(row.get("email"), casing = "lower"),
-        "signup_date": clean_date(row.get("signup_date)"))
+        "signup_date": clean_date(row.get("signup_date"))
 
     }
     

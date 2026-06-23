@@ -1,5 +1,6 @@
 from readers import csv_reader
 from readers import api_reader
+from load import load_customer_record
 from validate import is_valid_customer, is_valid_manga
 from clean import transform_customer_record, transform_manga_record
 
@@ -10,5 +11,7 @@ if __name__ == "__main__":
         if is_valid_customer(r):
             clean_record = transform_customer_record(r)
             print(f"  ✓ Validated & Cleaned ID {clean_record['customer_id']}: '{r.get('name')}' -> '{clean_record['name']}'")
+            print(f"{r.get('signup_date')}")
+            load_customer_record(clean_record)
         else:
             print( "Row Skipped (Failed Validation)")

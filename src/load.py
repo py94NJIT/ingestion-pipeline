@@ -4,8 +4,7 @@ import os
 
 load_dotenv()
 
-def load_to_postgres():
-    #conninfo= "dbname=postgres user=postgres password=032895 host=localhost port=5432"
+def get_db_connection():
     conn = psycopg2.connect(
         database=os.getenv("DB_NAME"), 
         user=os.getenv("DB_USER"), 
@@ -13,18 +12,47 @@ def load_to_postgres():
         host=os.getenv("DB_HOST"), 
         port = os.getenv("DB_PORT")
     )
+    return conn
+def load_customer_record(clean_record: dict):
+    insert_query = """
+        INSERT INTO customers(customer_id, name, email, signup_date)
+        VALUES (%s, %s, %s, %s)
+        ON CONFLICT (customer_id) DO UPDATE SET
+            name = EXCLUDED.name,
+            email = EXCLUDED.email,
+            signup_date = EXCLUDED.signup_date;
+    """
 
-    cursor=conn.cursor()
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
 
-    cursor.execute(f"""CREATE TABLE IF NOT EXISTS customers(customer_id int PRIMARY KEY, name varchar(30) , email varchar(30) , signup_date varchar(10)); """)
-    cursor.execute(f"""INSERT INTO customers(customer_id, name, email, signup_date) VALUES (101, 'alice smith', 'ALICE@example.com', '2026-01-15');""")
-    conn.commit()
+        cursor.execute(f"""
+            CREATE TABLE IF NOT EXISTS customers(
+                customer_id int PRIMARY KEY, 
+                name varchar(50), 
+                email varchar(100) , 
+                signup_date DATE
+            ); 
+        """)
+        cursor.execute(insert_query, (
+            clean_record["customer_id"],
+            clean_record["name"],
+            clean_record["email"],
+            clean_record["signup_date"]
+        ))
+        conn.commit()
+        cursor.close()
+    except Exception as e:
+        if conn:
+            conn.rollback()
+            print(f" Database error loading customer ID {clean_record.get('customer_id')}: {e}")
+            raise e
+    finally:
+        if conn:
+            conn.close()
 
-    cursor.execute(f"""SELECT * from customers""")
-    print(cursor.fetchall())
-    cursor.close()
-    conn.close()
-
-if __name__== "__main__":
-    load_to_postgres()
+def load_manga_record(clean_record: dict):
+    pass
     
