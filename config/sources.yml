@@ -1,0 +1,17 @@
+defaults:
+  batch_size: 5000
+  on_conflict: upsert
+
+sources:
+  - name: customers_csv
+    type: csv
+    path: data/customers.csv
+    target_table: stg_customers
+    pk: [customer_id]
+
+  - name: top_manga_api
+    type: api
+    genre_id: 1             # Action Genre ID for Jikan API
+    max_pages: 6
+    target_table: stg_manga
+    pk: [manga_id]
