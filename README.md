@@ -5,7 +5,7 @@ A modular, configuration-driven Python ingestion framework architected to pull r
 ## 🧭 System Architecture & Data Flow
 
 ```text
-       Source Layer (CSV / JSON / REST API)
+       Source Layer (CSV / REST API)
                        ↓
        Reader Layer (pandas / requests)
                        ↓
